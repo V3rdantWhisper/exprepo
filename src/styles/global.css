@@ -1,0 +1,91 @@
+/* VSCode-ish dark theme tokens */
+:root {
+  --bg: #1e1e1e;
+  --bg-alt: #252526;
+  --bg-activity: #333333;
+  --bg-panel: #1e1e1e;
+  --bg-input: #3c3c3c;
+  --border: #2d2d2d;
+  --border-strong: #454545;
+  --fg: #cccccc;
+  --fg-muted: #8c8c8c;
+  --fg-bright: #ffffff;
+  --accent: #0e639c;
+  --accent-hover: #1177bb;
+  --selection: #094771;
+  --hover: #2a2d2e;
+  --error: #f14c4c;
+  --warn: #cca700;
+  --ok: #89d185;
+
+  --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+    "Helvetica Neue", sans-serif, "Apple Color Emoji";
+  --font-mono: "JetBrains Mono", "Fira Code", "SF Mono", "Cascadia Code",
+    Consolas, "Liberation Mono", monospace;
+
+  --activity-w: 48px;
+  --sidebar-w: 280px;
+  --row-h: 22px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  color: var(--fg);
+  background: var(--bg-input);
+  border: 1px solid var(--border-strong);
+  border-radius: 2px;
+  padding: 4px 8px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--accent);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4f4f4f;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
